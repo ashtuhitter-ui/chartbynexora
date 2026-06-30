@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OANDA Charts</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<div class="app">
+  <header class="topbar">
+    <div class="brand">OANDA Charts</div>
+    <div class="quote">
+      <span id="symName">XAU/USD</span>
+      <span id="symPrice">-</span>
+      <span id="symChange" class="change">-</span>
+    </div>
+    <div id="tfBar" class="tf-bar"></div>
+    <div id="connStatus" class="conn-status">connecting…</div>
+  </header>
+
+  <div class="body">
+    <aside id="watchlist" class="watchlist"></aside>
+    <main class="chart-area">
+      <div id="chartContainer"></div>
+    </main>
+  </div>
+
+  <footer class="ohlc-bar">
+    <span>O <b id="ohlcO">-</b></span>
+    <span>H <b id="ohlcH">-</b></span>
+    <span>L <b id="ohlcL">-</b></span>
+    <span>C <b id="ohlcC">-</b></span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightweight-charts/4.1.3/lightweight-charts.standalone.production.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
